@@ -1,0 +1,41 @@
+{
+  "name": "babel-plugin-import-remove-resource-query",
+  "version": "0.0.1",
+  "description": "Remove the resourceQuery param when importing modules via babel. Useful with Jest, that doesn't support resourceQueries",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "jest --watch",
+    "prettier": "prettier --write '{src,test,test/helpers}/*.js'",
+    "test:prettier": "prettier --list-different '{src,test,test/helpers}/*.js' || { echo ^ These files need to be prettier: npm run prettier; exit 1; }",
+    "test:jest": "jest",
+    "test": "npm run test:prettier && npm run test:jest",
+    "release": "npm run test && np --no-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkjorgensen/babel-plugin-import-remove-resource-query.git"
+  },
+  "keywords": [
+    "babel",
+    "webpack",
+    "plugin",
+    "import",
+    "resource",
+    "query",
+    "resourceQuery",
+    "require",
+    "jest"
+  ],
+  "author": "Henrik J <henrikj@me.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hkjorgensen/babel-plugin-import-remove-resource-query/issues"
+  },
+  "homepage": "https://github.com/hkjorgensen/babel-plugin-import-remove-resource-query#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "jest": "^22.0.5",
+    "np": "^2.18.3",
+    "prettier": "^1.9.2"
+  }
+}
