@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-import-remove-resource-query",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Remove the resourceQuery param when importing modules via babel. Useful with Jest, that doesn't support resourceQueries",
   "main": "src/index.js",
   "scripts": {
